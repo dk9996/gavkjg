@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Калькулятор</title>
+  <button onclick="kalkulitor()">Выполнить вычисления</button>
+  <body>
+    <script>
+      function kalkulitor() {
+        let firstnumber = prompt("Введите первое число:");
+        let secondnumber = prompt("Введите второе число:");
+
+        firstnumber = +firstnumber;
+        secondnumber = +secondnumber;
+
+        const sum = firstnumber + secondnumber;
+        const difference = firstnumber - secondnumber;
+        const product = firstnumber * secondnumber;
+        const quotient = firstnumber / secondnumber;
+
+        alert(
+          `Результат:
+          Сумма: ${sum},
+          Разность: ${difference},
+          Произведение: ${product},
+          Деление: ${quotient}`
+        );
+      }
+    </script>
+  </body>
+</html>
